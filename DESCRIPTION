@@ -1,0 +1,9 @@
+Package: rClicky
+Title: API wrapper to GetClicky's data/analytics API
+Version: 0.1
+Date: 2011-03-23
+Author: Noah Lorang
+Maintainer: Noah Lorang <noah@noahhl.com>
+Description: API wrapper to GetClicky's data/analytics (non white label) API
+Depends: RCurl, XML, rjson
+License: MIT
