@@ -9,7 +9,8 @@ parameters.valid <- c("site_id", "sitekey", "base_url", "type", "output", "limit
 							"domain", "link", "browser", "os", "resolution", "country", "city",
 							"language", "hostname", "org", "source", "shorturl", "custom",
 							"session_id", "title", "action_type", "filter", 
-							"json_callback", "json_var", "null_values", "app" )
+							"json_callback", "json_var", "null_values", "app",
+							"goal", "campaign", "split")
 
 
 ClickyQuery <- function(configfile=NULL) {
@@ -107,7 +108,7 @@ ClickyQuery <- function(configfile=NULL) {
 	
 		results <- GetResults(GenerateURL(config))
 		
-		if (length(grep("output=json", GenerateURL(config)))
+		if (length(grep("output=json", GenerateURL(config))))
 			return(ParseJSON(results))
 		else if(length(grep("output=json", GenerateURL(config))) | length(grep("output", GenerateURL(config))) == 0)
 			return(ParseXML(results))
