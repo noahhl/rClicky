@@ -1,0 +1,1 @@
+This is an incomplete and unofficial wrapper for getclicky.com's API for the R statistical programming langauge. Use at your own risk.
